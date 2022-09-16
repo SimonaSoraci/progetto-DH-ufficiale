@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<title>Catalogo Opere</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style-esame.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Chonburi' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+</head>
+<body>
+	<span id="top"></span>
+	<header>
+		<nav class="navbar bg-light fixed-top">
+		  <div class="container-fluid">
+		    <a class="navbar-brand spazio-sinistra" href="file:///Users/simonasoraci/Desktop/sito-esame/index.htm">Letizia Battaglia</a>
+		    <button class="navbar-toggler spazio-destra" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+		      <div class="offcanvas-header">
+		        <h4 class="offcanvas-title" id="offcanvasNavbarLabel">Menù</h4>
+		        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		      </div>
+		      <div class="offcanvas-body">
+		        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+		          <li class="nav-item">
+		            <a class="nav-link active" aria-current="page" href="file:///Users/simonasoraci/Desktop/sito-esame/index.htm" title="Vai alla Homa">Home</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="#">Introduzione</a>
+		          </li>
+		          <li class="nav-item dropdown">
+		            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		              Catalogo
+		            </a>
+		            <ul class="dropdown-menu">
+		              <li><a class="dropdown-item" href="file:///Users/simonasoraci/Desktop/sito-esame/catalogo.htm" title="Vai alla lista">Lista</a></li>
+		              <li>
+		                <hr class="dropdown-divider"/>
+		              </li>
+		              <li><a class="dropdown-item" href="#">Date</a></li>
+		              <li><a class="dropdown-item" href="#">Luoghi</a></li>
+		            </ul>
+		          </li>
+		        </ul>
+		        <form class="d-flex" role="search">
+		          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		          <button class="btn btn-outline-secondary" type="submit">Cerca</button>
+		        </form>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+	</header>
+	<main>
+		<section class="py-5 text-center container" id="catalogo">
+		    <div class="row">
+		      <div class="col-md-8 mx-auto">
+		        <h1 class="fw-light text-center">Catalogo Item</h1>
+		        <p class="lead text-muted text-center">Il catalogo è esplorabile attraverso una sezione Date, Luoghi e Temi.</p>
+		          <a href="#" class="btn btn-secondary my-2" title="Vai alla sezione Date">Date</a>
+		          <a href="#" class="btn btn-secondary my-2" title="Vai alla sezione Luoghi">Luoghi</a>
+		          <a href="#" class="btn btn-secondary my-2" title="Vai alla sezione Temi">Temi</a>
+		        </p>
+		      </div>
+		    </div>
+		</section>
+			<!--apertura catalogo item riallinea-->
+		 	<div class="album bg-light">
+		    	<div class="container">
+		    		<!--breadcrumb-->
+		    		<div class="row">
+		    			<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+							  <ol class="breadcrumb">
+							    <li class="breadcrumb-item"><a href="file:///Users/simonasoraci/Desktop/sito-esame/index.htm" class="link-dark" title="Torna alla Home">Home</a></li>
+							    <li class="breadcrumb-item active" aria-current="page">Lista</li>
+							  </ol>
+						</nav>
+		    		</div>
+
+				    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+				    	<!--prima card-->
+				        <div class="col">
+					        <div class="card h-100 shadow-sm">
+					            <img src="img/BambinaPallonePalermo80.jpg" class="card-img-top img-thumbnail" alt="Bambina con pallone"/>
+
+					            <div class="card-body">	
+					            	<h4 class="card-title">La bambina con il pallone</h4>
+					            	<hr/>
+							        <p class="card-text">
+							        	Autore: Battaglia, Letizia.
+							        </p>
+							        <p class="card-text">
+							        	Data: 1980.
+							        </p>
+							        <p= class="card-text">
+							        	Luogo: Palermo, quartiere La Cala.
+							        </p>
+							        <div class="d-flex justify-content-between align-items-center">						    
+							            <div class="button">
+							            	<a href="file:///Users/simonasoraci/Desktop/sito-esame/item.htm" class="link-dark" title="Vai alla sezione Metadati">
+								                <button type="button" class="btn btn-sm btn-outline-secondary">
+								                	Tutti i metadati
+								                </button>
+								            </a>
+							            </div>							        
+							        </div>
+					            </div>
+					        </div>
+				        </div>
+
+					    <!--seconda card-->    
+				        <div class="col">
+					        <div class="card h-100 shadow-sm">
+					            <img src="img/Palermo-Bambini-quartiere-Sperone81.jpg" class="card-img-top img-thumbnail" alt="Bambini che giocano" title=""/>
+
+					            <div class="card-body">
+					            	<h4 class="card-title">Bambini a Sperone</h4>
+					            	<hr/>
+					            	<p class="card-text">
+							        	Autore: Battaglia, Letizia.
+							        </p>
+							        <p class="card-text">
+							        	Data: 1981.
+							        </p>
+							        <p= class="card-text">
+							        	Luogo: Palermo, quartiere Sperone.
+							        </p>
+									<div class="d-flex justify-content-between align-items-center">
+							            <div class="button">
+							                <button type="button" class="btn btn-sm btn-outline-secondary">Tutti i metadati</button>
+							            </div>
+					             	</div>
+								</div>
+					        </div>
+				        </div>
+
+				        <!--terza card-->
+				        <div class="col">
+				          	<div class="card h-100 shadow-sm">
+				            	<img src="img/Il-gioco-del-killer-1982.jpg" class="card-img-top img-thumbnail" alt="Bambino con pistola" title=""/>
+
+				            	<div class="card-body">
+				            		<h4 class="card-title">Il gioco del killer</h4>
+				            		<hr/>
+				            		<p class="card-text">
+							        	Autore: Battaglia, Letizia.
+							        </p>
+							        <p class="card-text">
+							        	Data: 1982.
+							        </p>
+							        <p= class="card-text">
+							        	Luogo: Palermo.
+							        </p>
+				             		<div class="d-flex justify-content-between align-items-center">
+				             			<div class="button">
+							                <button type="button" class="btn btn-sm btn-outline-secondary">Tutti i metadati</button>
+							            </div>
+				              		</div>
+				            	</div>
+				          	</div>
+				        </div>
+
+				      	<!--quarta card-->
+			        	<div class="col">
+			          		<div class="card h-100 shadow-sm">
+			            		<img src="img/Donnachefuma.jpg" class="card-img-top img-thumbnail" alt="Donna che fuma" title=""/>
+
+			            		<div class="card-body">
+			            			<h4 class="card-title">Donna che stira</h4>
+			            			<hr/>
+			            			<p class="card-text">
+							        	Autore: Battaglia, Letizia.
+							        </p>
+							        <p class="card-text">
+							        	Data: 1984.
+							        </p>
+							        <p= class="card-text">
+							        	Luogo: Catania.
+							        </p>			            
+			              			<div class="d-flex justify-content-between align-items-center">
+							            <div class="button">
+							                <button type="button" class="btn btn-sm btn-outline-secondary">Tutti i metadati</button>
+							            </div>
+			              			</div>
+			            		</div>
+			          		</div>
+			        	</div>
+
+			        	<!--quinta card-->
+			        	<div class="col">
+			          		<div class="card h-100 shadow-sm">
+			            		<img src="img/laricamatrice.jpg" class="card-img-top img-thumbnail" alt="Donna che ricama"/>
+
+			            		<div class="card-body">
+			            			<h4 class="card-title">La ricamatrice</h4>
+			            			<hr/>
+			            			<p class="card-text">
+							        	Autore: Battaglia, Letizia.
+							        </p>
+							        <p class="card-text">
+							        	Data: 1987.
+							        </p>
+							        <p= class="card-text">
+							        	Luogo: Montemaggiore Belsito, (PA).
+							        </p>
+			              			<div class="d-flex justify-content-between align-items-center">
+							            <div class="button">
+							                <button type="button" class="btn btn-sm btn-outline-secondary">Tutti i metadati</button>
+							            </div>
+			              			</div>
+			            		</div>
+			          		</div>
+			        	</div>
+
+			        	<!--sesta card-->
+			        	<div class="col">
+			          		<div class="card h-100 shadow-sm">
+			            		<img src="img/nerinachestira.jpg" class="card-img-top img-thumbnail" alt="Donna che stira" title=""/>
+
+			            		<div class="card-body">
+			            			<h4 class="card-title">Nerina che fuma</h4>
+			            			<hr/>
+			            			<p class="card-text">
+							        	Autore: Battaglia, Letizia.
+							        </p>
+							        <p class="card-text">
+							        	Data: 2019.
+							        </p>
+							        <p= class="card-text">
+							        	Luogo: Palermo.
+							        </p>
+			              			<div class="d-flex justify-content-between align-items-center">
+							            <div class="button">
+							                <button type="button" class="btn btn-sm btn-outline-secondary">Tutti i metadati</button>
+							            </div>
+			              			</div>
+			           			</div>
+			          		</div>
+			        	</div>
+
+			        	<!--settima card-->
+			        	<div class="col">
+			          		<div class="card h-100 shadow-sm">
+			          			<img src="img/mattarella-copyright-letizia-battaglia.jpg" class="card-img-top img-thumbnail" alt="Presidente Mattarella colpito a morte" title=""/>
+			            
+			            		<div class="card-body">
+			            			<h4 class="card-title">L'omicidio di Piersanti Mattarella</h4>
+			            			<hr/>
+			            			<p class="card-text">
+							        	Autore: Battaglia, Letizia.
+							        </p>
+							        <p class="card-text">
+							        	Data: 1980.
+							        </p>
+							        <p= class="card-text">
+							        	Luogo: Palermo.
+							        </p>
+				              		<div class="d-flex justify-content-between align-items-center">
+							            <div class="button">
+							                <button type="button" class="btn btn-sm btn-outline-secondary">Tutti i metadati</button>
+							            </div>
+				              		</div>
+				            	</div>
+				          	</div>
+			        	</div>
+
+			        	<!--ottava card-->
+				        <div class="col">
+					        <div class="card h-100 shadow-sm">
+					           <img src="img/ArrestoBagarella.jpg" class="card-img-top img-thumbnail" alt="Arresto Leoluca Bagarella" title=""/>
+
+				            	<div class="card-body">
+				            		<h4 class="card-title margini">L'arresto di Leoluca Bagarella</h4>
+			            			<hr/>
+			            			<p class="card-text">
+							        	Autore: Battaglia, Letizia.
+							        </p>
+							        <p class="card-text">
+							        	Data: 1979.
+							        </p>
+							        <p= class="card-text">
+							        	Luogo: Palermo.
+							        </p>
+						            <div class="d-flex justify-content-between align-items-center">
+							            <div class="button">
+							                <button type="button" class="btn btn-sm btn-outline-secondary">Tutti i metadati</button>
+							            </div>
+						            </div>
+						        </div>
+						    </div>
+				        </div>
+
+				        <!--nona card-->
+			        	<div class="col">
+			          		<div class="card h-100 shadow-sm">
+			            		<img src="img/falcone.jpg" class="card-img-top img-thumbnail" alt="Falcone al funerale del generale Dalla Chiesa" title=""/>
+
+			            		<div class="card-body">
+			            			<h4 class="card-title margini">Giovanni Falcone</h4>
+			            			<hr/>
+			            			<p class="card-text">
+							        	Autore: Battaglia, Letizia.
+							        </p>
+							        <p class="card-text">
+							        	Data: 1982.
+							        </p>
+							        <p= class="card-text">
+							        	Luogo: Palermo.
+							        </p>
+			              			<div class="d-flex justify-content-between align-items-center">
+							            <div class="button">
+							                <button type="button" class="btn btn-sm btn-outline-secondary">Tutti i metadati</button>
+							            </div>
+			              			</div>
+			            		</div>
+			          		</div>
+			        	</div>
+			        	<!--chiusura delle div di apertura-->
+			      	</div>
+			      	<div id="spazio"></div>
+			    </div>
+			</div>
+	</main>
+	<!--pagination-->
+	<div class="row">
+		<div class="col-md-12">
+			<nav aria-label="Page navigation example">
+			  <ul class="pagination pagination-sm justify-content-center">
+			    <li class="page-item disabled">
+			      <a class="page-link">Previous</a>
+			    </li>
+			    <li class="page-item active" aria-current="page">
+			    	<span class="page-link text-bg-secondary border-secondary">1</span>
+			    </li>
+			    <li class="page-item"><a class="page-link text-dark" href="#" title="Vai alla pagina 2">2</a></li>
+			    <li class="page-item"><a class="page-link text-dark" href="#" title="Vai alla pagina 3">3</a></li>
+			    <li class="page-item">
+			      <a class="page-link text-dark" href="#" title="Vai avanti">Next</a>
+			    </li>
+			  </ul>
+			</nav>
+		</div>
+	</div>
+	<!--footer-->
+	<div class="container">
+	  <footer class="py-3 my-4">
+	    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+	      <li class="nav-item"><a href="file:///Users/simonasoraci/Desktop/sito-esame/index.htm" class="nav-link px-2 text-muted">Home</a></li>
+	      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+	      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+	      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+	    </ul>
+	    <p class="text-center text-muted">&copy; 2022 Simona Soraci</p>
+	    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+	    	<a href="#top" class="link-dark" title="Torna su"><button type="button" class="btn btn-outline-secondary btn-lg">Torna su</button></a>
+	    </div>
+	  </footer>
+	</div>
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
